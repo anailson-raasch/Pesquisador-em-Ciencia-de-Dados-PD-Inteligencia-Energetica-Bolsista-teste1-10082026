@@ -137,8 +137,5 @@ com `Co` e `P` calculados **em SQL**, não em Python. O resultado deve bater com
 
 - **Duração do teste:** 2h
 - **Linguagem de programação:** Python e SQL
-- **Entrega:** respostas, ao vivo. Se não der tempo de codar alguma parte, responda mesmo
-  assim — o número dito em voz alta, com o raciocínio, vale quase tanto quanto o código.
-- **Pense em voz alta.** Se travar, diga que travou: conta a favor, não contra.
 
 > Precisando se comunicar durante o teste? Escreva para **lucas@dg.energy**.
