@@ -155,13 +155,7 @@ entrega: queremos ver como você pensou, não só onde chegou.
 
 ### 2. Um vídeo de 3 a 5 minutos, no YouTube
 
-Grave um vídeo de 3 a 5 minutos apresentando a solução como se fosse para o CTO e o time
-de Produto:
-
-- **1 min** — o problema: o que é o rateio na GD, e a dor da vacância/overbooking.
-- **2 min** — a solução: qual modelo venceu na Q3 e **por quê**; como você pensou o
-  rebalanceamento da Q4.
-- **1 min** — o insight mais interessante da Q5 e o que a Digital Grid faz com ele.
+Grave um vídeo de 3 a 5 minutos apresentando a solução
 
 **Suba no YouTube como "Não listado"** (*Unlisted*) — não como "Privado", senão não
 conseguimos abrir. Não listado significa que só quem tem o link acessa; o vídeo não
