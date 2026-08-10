@@ -155,7 +155,7 @@ entrega: queremos ver como você pensou, não só onde chegou.
 
 ### 2. Um vídeo de 3 a 5 minutos, no YouTube
 
-Grave um vídeo de 3 a 5 minutos apresentando a solução
+Grave um vídeo de 3 a 5 minutos apresentando a solução.
 
 **Suba no YouTube como "Não listado"** (*Unlisted*) — não como "Privado", senão não
 conseguimos abrir. Não listado significa que só quem tem o link acessa; o vídeo não
@@ -169,18 +169,12 @@ aparece em buscas nem no seu canal.
 # Desafio Digital Grid — <seu nome>
 
 🎥 **Vídeo de apresentação:** https://youtu.be/xxxxxxxxxxx
+```
+
+### 3. Para onde enviar
+
+Você só precisa do **link do seu fork**, submetido pela ferramenta de aplicação do teste.
 
 ---
-
-### Para onde enviar
-
-Você só precisa do **link do seu fork** e submeter na pela ferramenta da aplicação do teste.
-
----
-
-## Regras
-
-- **Duração do teste:** 2h
-- **Linguagem de programação:** Python e SQL
 
 > Precisando se comunicar durante o teste? Escreva para **lucas@dg.energy**.
