@@ -2,7 +2,7 @@
 
 Vaga: Pesquisador em Ciência de Dados — P&D Inteligência Energética (Bolsista)
 
-**2 horas, ao vivo.**
+Duração máxima: 2 horas
 
 ---
 
@@ -130,6 +130,57 @@ uc | eca | cr | co | p
 ```
 
 com `Co` e `P` calculados **em SQL**, não em Python. O resultado deve bater com o da Parte 4.
+
+---
+
+## Entrega
+
+### 1. O código, num fork deste repositório
+
+Faça um **fork** deste repositório (botão *Fork*, no topo da página), trabalhe nele e
+nos mande o link do seu fork. Não abra Pull Request — assim um candidato não vê a
+solução do outro.
+
+O fork deve conter:
+
+- um **Jupyter Notebook (.ipynb)** documentado, com as respostas e o raciocínio;
+- um **`requirements.txt`** (ou `environment.yml`, ou `pyproject.toml`) — precisamos
+  conseguir rodar seu código;
+- um **`SOLUCAO.md`** curto, ou uma seção inicial no notebook, dizendo o que você fez,
+  o que deixou de fora e por quê;
+- **o link do seu vídeo, no topo do `README.md` do fork** (veja o item 2).
+
+**Commite ao longo do trabalho**, não tudo de uma vez no fim. O histórico faz parte da
+entrega: queremos ver como você pensou, não só onde chegou.
+
+### 2. Um vídeo de 3 a 5 minutos, no YouTube
+
+Grave um vídeo de 3 a 5 minutos apresentando a solução como se fosse para o CTO e o time
+de Produto:
+
+- **1 min** — o problema: o que é o rateio na GD, e a dor da vacância/overbooking.
+- **2 min** — a solução: qual modelo venceu na Q3 e **por quê**; como você pensou o
+  rebalanceamento da Q4.
+- **1 min** — o insight mais interessante da Q5 e o que a Digital Grid faz com ele.
+
+**Suba no YouTube como "Não listado"** (*Unlisted*) — não como "Privado", senão não
+conseguimos abrir. Não listado significa que só quem tem o link acessa; o vídeo não
+aparece em buscas nem no seu canal.
+
+> No YouTube: **Enviar vídeo → Visibilidade → Não listado.**
+
+**Cole o link no topo do `README.md` do seu fork**, assim:
+
+```markdown
+# Desafio Digital Grid — <seu nome>
+
+🎥 **Vídeo de apresentação:** https://youtu.be/xxxxxxxxxxx
+
+---
+
+### Para onde enviar
+
+Você só precisa do **link do seu fork** e submeter na pela ferramenta da aplicação do teste.
 
 ---
 
