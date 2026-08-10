@@ -116,8 +116,8 @@ respeito.
 Entregue uma tabela `uc | eca | cr | co | p` e o **crédito alocado** a cada UC
 (`P × G`, com `G` = a sua previsão de out/2026).
 
-**Valide** que `Σ P = 1` — e pergunte-se se essa validação prova mesmo que o seu rateio
-está correto.
+**Valide** que `Σ P = 1`. Depois responda: **um rateio errado pode passar nessa
+validação?** Se puder, mostre como — e diga que checagem você acrescentaria.
 
 ---
 
