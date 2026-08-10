@@ -46,21 +46,28 @@ valores como estão.
 
 ## Parte 1 — Olhe a série antes de modelar
 
-**(a)** Plote a série inteira e responda: **Comportamento da usina?**
+**(a)** Plote a série inteira e descreva o **comportamento da usina** — com números.
 
-Descreva o comportamento dela **com números**. Adjetivo sem quantidade não conta — se você disser que alguma coisa é alta, baixa, forte ou fraca, diga **quanto**, **quando** e **comparado com o quê**.
+Adjetivo sem quantidade não conta: se você disser que alguma coisa é alta, baixa, forte ou
+fraca, diga **quanto**, **quando** e **comparado com o quê**.
 
 **(b)** Analise os dados da usina e **identifique os pontos outliers**.
 
-Diga **quantos** são, **quais** são e **por que** você chamou cada um de outlier. Qual foi a sua régua?
+Diga **quantos** são, **quais** são e **por que** você chamou cada um de outlier. Qual foi
+a sua régua?
+
+> Antes de qualquer estatística, **abra o arquivo e olhe**. Nem todo defeito de dado é um
+> outlier.
 
 ---
 
 ## Parte 2 — Limpe os dados
 
-Escreva a limpeza como uma **função idempotente** (rodar duas vezes dá o mesmo resultado) dos pontos que você identificou como outliers ou falha de medição:
+Escreva a limpeza como uma **função idempotente** (rodar duas vezes dá o mesmo resultado) dos pontos que você identificou como outliers ou falha de medição.
 
-Mostre um **antes e depois**: quantos registros entraram, quantos saíram, quantos foram corrigidos, explique a metodologia de correção e os valores após cada correção.
+Mostre um **antes e depois**: quantos registros entraram, **quantos saíram e por quê**,
+quantos foram corrigidos, qual a metodologia de correção e o valor de cada ponto depois de
+corrigido.
 
 ---
 
@@ -75,7 +82,7 @@ Divida a série limpa em três conjuntos:
 | **Teste** | a nota final — o modelo nunca viu estes meses |
 
 **Onde cortar é decisão sua.** Diga **quais meses** colocou em cada conjunto e
-**por quê**. Lembre que aqui os conjuntos são **fatias no tempo, em ordem**:
+**por quê**. Lembre que aqui os conjuntos são **fatias no tempo, em ordem**.
 
 **(a) Treine e escolha.** Ajuste no **treino** e compare na **validação** quantos modelos quiser. Escolha um e diga **por que** ele ganhou.
 
@@ -83,13 +90,20 @@ Divida a série limpa em três conjuntos:
 
 > O teste se olha **uma vez**. Se você voltar e trocar de modelo porque o MAPE do teste não agradou, ele virou validação — e a nota perdeu o sentido.
 
-**(c) Agora preveja o que ninguém sabe.** Reajuste com **todo** o histórico limpo (os três conjuntos) e responda: **quanto a usina vai gerar em julho, agosto, setembro e outubro de 2026?**
+**(c) Agora preveja o que ninguém sabe.** Reajuste com **todo** o histórico limpo (os três
+conjuntos) e responda: **quanto a usina vai gerar em julho, agosto, setembro e outubro de
+2026?**
+
+> A base termina em **junho/2026** — julho também é previsão, não consulta.
 
 ---
 
 ## Parte 4 — Cobertura e rateio
 
-**(a) Cobertura.** Compare, mês a mês, a **geração prevista** com o **consumo médio total das 10 UCs**. Em que mês a usina passa a cobrir a carteira?.
+**(a) Cobertura.** Compare, mês a mês, a **geração prevista** com o **consumo médio total
+das 10 UCs**. Em que mês a usina passa a cobrir a carteira? E no **acumulado dos quatro
+meses**, cobre? Responda com números — e diga o que a Digital Grid deveria fazer a
+respeito.
 
 **(b) Rateio de OUT/2026.** Implemente a lógica de alocação de créditos:
 
@@ -102,11 +116,14 @@ Divida a série limpa em três conjuntos:
 Entregue uma tabela `uc | eca | cr | co | p` e o **crédito alocado** a cada UC
 (`P × G`, com `G` = a sua previsão de out/2026).
 
+**Valide** que `Σ P = 1` — e pergunte-se se essa validação prova mesmo que o seu rateio
+está correto.
+
 ---
 
 ## Parte 5 — SQL
 
-Carregue os dados em um banco (**SQLite, DuckDB — sua escolha**) e escreva **uma única query** que retorne, para o mês de referência:
+Carregue os dados em um banco (**SQLite, DuckDB — sua escolha**) e escreva **uma única query** que devolva o rateio de **out/2026**:
 
 ```
 uc | eca | cr | co | p
@@ -120,5 +137,8 @@ com `Co` e `P` calculados **em SQL**, não em Python. O resultado deve bater com
 
 - **Duração do teste:** 2h
 - **Linguagem de programação:** Python e SQL
+- **Entrega:** respostas, ao vivo. Se não der tempo de codar alguma parte, responda mesmo
+  assim — o número dito em voz alta, com o raciocínio, vale quase tanto quanto o código.
+- **Pense em voz alta.** Se travar, diga que travou: conta a favor, não contra.
 
 > Precisando se comunicar durante o teste? Escreva para **lucas@dg.energy**.
