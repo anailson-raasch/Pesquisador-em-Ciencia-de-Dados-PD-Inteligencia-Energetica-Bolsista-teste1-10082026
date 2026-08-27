@@ -1,2 +1,0 @@
-Necessário importar as bibliotecas:
-pandas e plotly.express
